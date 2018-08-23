@@ -1,8 +1,6 @@
 staload "SATS/free.sats"
 staload "SATS/applicative_vt.sats"
 
-absimpl applicative_viewtype(a) = Option_vt(a)
-
 implement {a} pure_vt (x) =
   Some_vt(x)
 
