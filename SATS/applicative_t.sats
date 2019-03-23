@@ -1,0 +1,13 @@
+staload "SATS/functor.sats"
+
+abstype applicative_type(a: vt@ype+) = ptr
+
+typedef applicative_t(a: t@ype) = applicative_type(a)
+
+fun {a:t@ype} pure_t (a) : applicative_t(a)
+
+fun {a:t@ype}{b:t@ype} apply_t (applicative_t(a -> b), applicative_t(a)) : applicative_t(b)
+
+fun {a:t@ype}{b:t@ype} chain_t (applicative_t(a), applicative_t(b)) : applicative_t(b)
+
+fun {a:t@ype}{b:t@ype} niahc_t (applicative_vt(a), applicative_t(b)) : applicative_t(a)
