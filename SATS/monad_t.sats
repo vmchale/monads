@@ -1,4 +1,4 @@
-staload "SATS/applicative.sats"
+staload "SATS/applicative_t.sats"
 
 abstype monad_type(a: t@ype+) = ptr
 
