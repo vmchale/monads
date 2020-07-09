@@ -8,4 +8,6 @@ in    prelude.default
             , target = "${prelude.atsProject}/monads"
             }
         ]
+      , compiler = [ 0, 4, 0 ]
+      , version = [ 0, 3, 13 ]
       }
